@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tractor Sales - Buy Quality Tractors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    .container {
+      padding: 20px;
+    }
+    .tractor-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .tractor-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .tractor-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .tractor-card h3 {
+      margin: 10px 0;
+    }
+    .tractor-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .tractor-card button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .tractor-card button:hover {
+      background-color: #45a049;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Tractor Sales</h1>
+    <p>Your one-stop shop for quality tractors at affordable prices.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#tractors">Tractors</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <!-- Home Section -->
+    <section id="home">
+      <h2>About Us</h2>
+      <p>We specialize in providing high-quality tractors for farming and agricultural needs. Browse our collection and find the perfect tractor for your farm.</p>
+    </section>
+
+    <!-- Tractor Listings Section -->
+    <section id="tractors">
+      <h2>Our Tractors</h2>
+      <div class="tractor-list">
+        <!-- Tractor 1 -->
+        <div class="tractor-card">
+          <img src="john-deere-5050d.jpg" alt="John Deere 5050D">
+          <h3>John Deere 5050D</h3>
+          <p>Price: $25,000</p>
+          <p>50 HP, 4WD, Diesel Engine</p>
+          <button onclick="contactUs()">Contact Us to Buy</button>
+        </div>
+
+        <!-- Tractor 2 -->
+        <div class="tractor-card">
+          <img src="mahindra-575-di.jpg" alt="Mahindra 575 DI">
+          <h3>Mahindra 575 DI</h3>
+          <p>Price: $20,000</p>
+          <p>45 HP, 2WD, Diesel Engine</p>
+          <button onclick="contactUs()">Contact Us to Buy</button>
+        </div>
+
+        <!-- Tractor 3 -->
+        <div class="tractor-card">
+          <img src="new-holland-3630.jpg" alt="New Holland 3630">
+          <h3>New Holland 3630</h3>
+          <p>Price: $30,000</p>
+          <p>60 HP, 4WD, Turbocharged Engine</p>
+          <button onclick="contactUs()">Contact Us to Buy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or want to purchase a tractor, feel free to reach out to us!</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Tractor Sales. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function contactUs() {
+      alert("Thank you for your interest! Please fill out the contact form, and we'll get back to you shortly.");
+      window.location.href = "#contact";
+    }
+  </script>
+</body>
+</html>
